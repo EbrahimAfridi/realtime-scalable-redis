@@ -5,9 +5,7 @@ import { redis } from "@/lib/redis";
 import { Star } from "lucide-react";
 
 export default async function Home() {
-
   const servedRequests = await redis.get("served-requests");
-
 
   return (
     <section className="min-h-screen bg-grid-zinc-50">
